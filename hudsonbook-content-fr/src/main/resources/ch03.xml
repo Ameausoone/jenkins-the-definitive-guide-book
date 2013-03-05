@@ -10,52 +10,55 @@
 				<primary>installation</primary>
 				<secondary>Jenkins</secondary>
 			</indexterm>
-			L'une des premières choses que vous avez dû remarquer à propos de
-			Jenkins, est qu'il est très simple à installer.
-			En effet, en moins de cinq minutes, vous pouvez avoir un serveur
-			Jenkins installé et disponible. Néanmoins, comme
-			toujours, dans le monde réel, les choses ne sont pas aussi
-			simples, et il y a quelques détails auxquelles vous devez
-			penser lorsque vous installez un serveur
-			Jenkins en production. Dans ce chapitre, nous allons voir comment installer
-			Jenkins sur votre poste poste de travail ou sur un véritable serveur. Nous allons
-			également voir comment entretenir votre installation de Jenkins une fois en production, et comment
-			réaliser les actions de maintenance simples comme les sauvegardes et les mises à jour.
+	L'une des premières choses que vous avez dû remarquer à propos de
+	Jenkins, est qu'il est très simple à installer.
+	En effet, en moins de cinq minutes, vous pouvez avoir un serveur
+	Jenkins installé et disponible. Néanmoins, comme
+	toujours, dans le monde réel, les choses ne sont pas aussi
+	simples, et il y a quelques détails auxquelles vous devez
+	penser lorsque vous installez un serveur
+	Jenkins en production. Dans ce chapitre, nous allons voir comment installer
+	Jenkins sur votre poste poste de travail ou sur un véritable serveur. Nous allons
+	également voir comment entretenir votre installation de Jenkins une fois en production, et comment
+	réaliser les actions de maintenance simples comme les sauvegardes et les mises à jour.
 		</para>
 
 	</sect1>
 	<sect1 id="chapter-installing-downloading">
 		<title>Télécharger et installer Jenkins</title>
 		<para>
-			Jenkings est simple à installer, et vous pouvez le faire tourner
-			n'importe où. Vous pouvez le lancer soit comme une
-			application, ou le déployer dans un conteneur d'application Java classique comme Tomcat ou JBoss. La première option est
-			simple à mettre à oeuvre, et permet de tester Jenkins sur votre poste de travail, en quelques minutes, vous pouvez
-			installer et lancer une version minimaliste de Jenkins.
+	Jenkings est simple à installer, et vous pouvez le faire tourner
+	n'importe où. Vous pouvez le lancer soit comme une
+	application, ou le déployer dans un conteneur d'application Java classique comme Tomcat ou JBoss. La première option est
+	simple à mettre à oeuvre, et permet de tester Jenkins sur votre poste de travail, en quelques minutes, vous pouvez
+	installer et lancer une version minimaliste de Jenkins.
 		</para>
 
 		<para>
 			<indexterm id="I_indexterm3_d1e2510" significance="normal">
-				<primary>Jenkins</primary>
-				<secondary>pré-requis</secondary>
-			</indexterm>
-			<indexterm id="I_indexterm3_d1e2515" significance="normal">
-				<primary>JDK (Java Development Kit)</primary>
-				<secondary>pré-requis</secondary>
-			</indexterm>
-			Jenkins étant une application Java, vous aurez besoin d'une version
-			récente de Java sur votre machine. Plus précisèment, vous aurez besoin de Java 5. En fait, sur votre
-			serveur, vous aurez même certainement besoin du Java
-			Development Kit (JDK) 5.0 ou d'une version supérieure pour
-			éxécuter vos builds. Si vous n'en êtes pas sûr, vous pouvez vérifier
-			<indexterm id="I_indexterm3_d1e2521" significance="normal">
-				<primary>votre version de Java </primary>
-			</indexterm>
-			en éxécutant la commande suivante sur votre machine :
-			<literal moreinfo="none">java
-				-version
-			</literal>
+	<primary>Jenkins</primary>
+	<secondary>pré-requis</secondary>
+</indexterm>
+	<indexterm id="I_indexterm3_d1e2515" significance="normal">
+		<primary>JDK (Java Development Kit)</primary>
+		<secondary>pré-requis</secondary>
+	</indexterm>
+	Jenkins étant une application Java, vous aurez besoin d'une version
+	récente de Java sur votre machine. Plus précisèment,
+	vous aurez besoin de Java 5. En fait, sur votre
+	serveur, vous aurez même certainement besoin du Java
+	Development Kit
+	(JDK) 5.0 ou d'une version supérieure pour
+	éxécuter vos builds. Si vous n'en êtes pas sûr, vous pouvez vérifier
+	<indexterm id="I_indexterm3_d1e2521" significance="normal">
+		<primary>votre version de Java </primary>
+	</indexterm>
+	en éxécutant la commande suivante sur votre machine :
+	<literal moreinfo="none">java
+		-version
+	</literal>
 		</para>
+		
 		<screen format="linespecific">
 			$
 			<userinput moreinfo="none">java -version</userinput>
@@ -64,6 +67,7 @@
 			Java HotSpot(TM) 64-Bit Server VM (build 14.3-b01-101, mixed mode)
 		</screen>
     <?dbfo-need height=”1in”?>
+    
 		<para>
 			Jenkins
 			<indexterm id="I_indexterm3_d1e2536" significance="normal">
@@ -79,6 +83,7 @@
 			) ou depuis le site web du livre.
 			Jenkins est un projet actif, et de nouvelles versions sont disponibles régulièrement.
 		</para>
+		
 		<para>
 			Pour
 			<indexterm id="I_indexterm3_d1e2550" significance="normal">
@@ -105,6 +110,7 @@
 			). L'installateur MSI est livré avec une version du JRE intégré, il n'est donc pas nécessaire d'avoir une version de
 			Java installée.
 		</para>
+		
 		<figure float="none" id="fig-jenkins-windows-installer">
 			<title>Vous pouvez télécharger les binaires de Jenkins sur le site web de Jenkins
 			</title>
@@ -119,23 +125,23 @@
 		</figure>
 
 		<para>
-			Une fois que vous avez lancé l'installateur,
-			<indexterm id="I_indexterm3_d1e2581" significance="normal">
-				<primary>Jenkins</primary>
-				<secondary>port running on</secondary>
-			</indexterm>
-			Jenkins démarrera automatiquement sur le port 8080 (voir
-			<xref linkend="fig-hudson-starting-page" />
-			).
-			L'installateur crééra un service Jenkins pour vous, que vous pourrez démarrer et
-			arrêter comme n'importe quel autre service Windows.
+	Une fois que vous avez lancé l'installateur,
+	<indexterm id="I_indexterm3_d1e2581" significance="normal">
+		<primary>Jenkins</primary>
+		<secondary>port running on</secondary>
+	</indexterm>
+	Jenkins démarrera automatiquement sur le port 8080 (voir
+	<xref linkend="fig-hudson-starting-page" />
+	).
+	L'installateur crééra un service Jenkins pour vous, que vous pourrez démarrer et
+	arrêter comme n'importe quel autre service Windows.
 		</para>
 
 		<para>
-			Il existe également de très bon installateurs pour Mac OS X et
-			également pour la plupart des distributions Linux,
-			comme Ubuntu, RedHat (incluant CentOS et Fedora) et OpenSolaris. Nous expliquerons comment installer Jenkins
-			sur Ubuntu et Redhal plus loin.
+	Il existe également de très bon installateurs pour Mac OS X et
+	également pour la plupart des distributions Linux,
+	comme Ubuntu, RedHat (incluant CentOS et Fedora) et OpenSolaris. Nous expliquerons comment installer Jenkins
+	sur Ubuntu et Redhal plus loin.
 		</para>
 
 		<para>
