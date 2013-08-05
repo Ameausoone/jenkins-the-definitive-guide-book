@@ -288,6 +288,26 @@ drwxr-xr-x   28 johnsmart  staff    952 26 May  2009 war</screen>
         Gradle dans <xref linkend="chapter-build-jobs" />.</para>
       </listitem>
     </itemizedlist>
+
+    <sect2>
+      <title>Les traducteurs du présent livre en français</title>
+      <itemizedlist>
+        <listitem><ulink url="http://github.com/almorelle">Alexis Morelle</ulink></listitem>
+        <listitem><ulink url="http://github.com/ath0mas">Alexis Thomas</ulink></listitem>
+        <listitem><ulink url="http://github.com/Ameausoone">Antoine Meausoone</ulink></listitem>
+        <listitem><ulink url="http://github.com/Batmat">Baptiste Mathus</ulink></listitem>
+        <listitem><ulink url="http://github.com/cluelessjoe">Joseph Pachod</ulink></listitem>
+        <listitem><ulink url="http://github.com/ehsavoie">Emmanuel Hugonnet</ulink></listitem>
+        <listitem><ulink url="http://github.com/bouquetf">Frederic Bouquet</ulink></listitem>
+        <listitem><ulink url="http://github.com/jeffmaury">Jeff Maury</ulink></listitem>
+        <listitem><ulink url="http://github.com/Maetis">Kevin Lecouvey</ulink></listitem>
+        <listitem><ulink url="https://github.com/mpapo">Michael Pailloncy</ulink></listitem>
+        <listitem><ulink url="http://github.com/nacef-labidi">Nacef Labidi</ulink></listitem>
+        <listitem><ulink url="http://github.com/thbkrkr">Thibault Richard</ulink></listitem>
+      </itemizedlist>
+
+    </sect2>
+
   </sect1>
 
   <sect1 id="I_sect1_d1e356">
